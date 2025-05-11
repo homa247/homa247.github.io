@@ -1,0 +1,17 @@
+<div class="p-4">
+    <h2 class="text-xl font-bold mb-4">🔔 اعلان‌ها</h2>
+
+    <p>وضعیت مجوز اعلان:
+        <span [ngClass]="{
+        'text-green-600': permissionStatus === 'granted',
+        'text-yellow-600': permissionStatus === 'default',
+        'text-red-600': permissionStatus === 'denied'
+      }">
+            {{ permissionStatus }}
+        </span>
+    </p>
+
+    <button mat-raised-button color="primary" class="mt-4" (click)="requestPermission()">
+        درخواست مجوز و ارسال اعلان تستی
+    </button>
+</div>

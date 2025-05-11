@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body {
+    height: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    font-family: "IRANSans";
+}
+
+body {
+    margin: 0;
+    font-family: 'IRANSans', sans-serif;
+}
+
+body * {
+    font-family: "IRANSans";
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url("./fonts/vazir/Vazir-Bold-FD-WOL.eot");
+    src: url("./fonts/vazir/Vazir-Bold-FD-WOL.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/vazir/Vazir-Bold-FD-WOL.woff") format("woff"),
+        url("./fonts/vazir/Vazir-Bold-FD-WOL.woff2") format("woff2"),
+        url("./fonts/vazir/Vazir-Bold-FD-WOL.ttf") format("truetype");
+}
+
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("./fonts/vazir/Vazir-Medium-FD-WOL.eot");
+    src: url("./fonts/vazir/Vazir-Medium-FD-WOL.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/vazir/Vazir-Medium-FD-WOL.woff") format("woff"),
+        url("./fonts/vazir/Vazir-Medium-FD-WOL.woff2") format("woff2"),
+        url("./fonts/vazir/Vazir-Medium-FD-WOL.ttf") format("truetype");
+}
+
+$my-custom-typography-config: mat.m2-define-typography-config($headline-1: mat.m2-define-typography-level(96px, 96px, 300, "IRANSans", -1.5),
+        $headline-2: mat.m2-define-typography-level(60px, 60px, 300, "IRANSans", 0em),
+        $headline-3: mat.m2-define-typography-level(48px, 48px, 400, "IRANSans", 0em),
+        $headline-4: mat.m2-define-typography-level(34px, 34px, 400, "IRANSans", 0em),
+        $headline-5: mat.m2-define-typography-level(24px, 24px, 400, "IRANSans", 0em),
+        $headline-6: mat.m2-define-typography-level(18px, 20px, 500, "IRANSans", 0em),
+        $subtitle-1: mat.m2-define-typography-level(16px, 24px, 400, "IRANSans", 0em),
+        $subtitle-2: mat.m2-define-typography-level(16px, 28px, 400, "IRANSans", 0em),
+        $body-2: mat.m2-define-typography-level(12px, 16px, 400, "IRANSans", 0em),
+        $body-1: mat.m2-define-typography-level(12px, 16px, 400, "IRANSans", 0em),
+        $button: mat.m2-define-typography-level(13px, 14px, 500, "IRANSans", 0em),
+        $caption: mat.m2-define-typography-level(11px, 16px, 400, "IRANSans", 0em),
+    );
+
+@include mat.typography-hierarchy($my-custom-typography-config);
