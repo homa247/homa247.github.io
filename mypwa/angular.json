@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "pwa-demo": {
+    "mypwa": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pwa-demo",
+            "outputPath": "dist/mypwa",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "pwa-demo:build:production"
+              "buildTarget": "mypwa:build:production"
             },
             "development": {
-              "buildTarget": "pwa-demo:build:development"
+              "buildTarget": "mypwa:build:development"
             }
           },
           "defaultConfiguration": "development"
