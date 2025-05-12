@@ -1,1 +1,18 @@
-<p>location works!</p>
+<div class="p-4 bg-white rounded-xl shadow-md text-center">
+    <h2 class="text-xl font-semibold mb-2">موقعیت فعلی شما</h2>
+    <button mat-raised-button color="primary" class="mt-4" (click)="getLocation()">
+        موقعیت
+    </button>
+    @if(latitude && longitude){
+    <div>
+        <p>🌍 عرض جغرافیایی: <strong>{{ latitude }}</strong></p>
+        <p>🌍 طول جغرافیایی: <strong>{{ longitude }}</strong></p>
+    </div>
+    }
+
+    @if(errorMessage){
+    <div class="text-red-500 mt-2">
+        {{ errorMessage }}
+    </div>
+    }
+</div>
