@@ -22,6 +22,8 @@ export class LocationComponent {
         (position) => {
           this.latitude = position.coords.latitude;
           this.longitude = position.coords.longitude;
+          console.log(position);
+          console.log(position.coords);
 
         },
         (error) => {
