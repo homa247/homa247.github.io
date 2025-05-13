@@ -1,28 +1,43 @@
-<div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8 grid md:grid-cols-2 gap-6 items-center">
+<div class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center justify-center p-6">
+    <div class="w-full max-w-4xl bg-white rounded-3xl shadow-2xl p-6 md:p-10 grid md:grid-cols-2 gap-8 items-center">
 
-    <!-- سمت چپ -->
-    <div class="space-y-4">
-        <h1 class="text-xl font-semibold"> سلام 👋</h1>
-        <p class="text-gray-600 text-lg">اپ آزمایشی برای مقایسه قابلیت‌های <strong>PWA</strong> و اپلیکیشن‌های
-            <strong>Native</strong>
-        </p>
-        <ul class="text-sm text-gray-500 list-disc pl-4 space-y-1">
-            <li>موقعیت مکانی</li>
-            <li>اعلان‌ها (Notifications)</li>
-            <li>دوربین و رسانه</li>
-            <li>کار در حالت آفلاین</li>
-            <li>مدیریت کاربران</li>
-        </ul>
+        <!-- بخش معرفی -->
+        <div class="space-y-6 text-center md:text-right">
+            <h1 class="text-2xl font-bold text-blue-800">👋 خوش آمدید</h1>
+            <p class="text-gray-600 text-base leading-relaxed">
+                این اپلیکیشن آزمایشی با هدف بررسی و مقایسه‌ی قابلیت‌های
+                <span class="text-blue-700 font-medium">Progressive Web App (PWA)</span>
+                و اپلیکیشن‌های
+                <span class="text-blue-700 font-medium">Native</span>
+                طراحی شده است.
+            </p>
+            <p class="text-sm text-gray-500">
+                در این نسخه، سعی شده ویژگی‌های کلیدی PWA پیاده‌سازی شود تا عملکرد و تجربه‌ی کاربری آن با اپ‌های بومی
+                مقایسه‌پذیر گردد.
+            </p>
+
+            <ul class="text-sm text-gray-600 list-disc pr-5 space-y-1">
+                <li>📍 دریافت موقعیت جغرافیایی کاربر</li>
+                <li>🔔 ارسال اعلان (Notification)</li>
+                <li>📷 دسترسی به دوربین دستگاه</li>
+                <li>📴 قابلیت اجرا در حالت آفلاین</li>
+                <li>👥 مدیریت و نمایش اطلاعات کاربران</li>
+            </ul>
+        </div>
+
+        <!-- دکمه‌های دسترسی به صفحات -->
+        <div class="grid gap-4">
+            <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium"
+                routerLink="/notification">🔔 ارسال اعلان</button>
+            <button mat-raised-button color="accent" class="w-full py-3 text-base font-medium" routerLink="/location">📍
+                موقعیت مکانی</button>
+            <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium" routerLink="/camera">📷
+                استفاده از دوربین</button>
+            <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium"
+                routerLink="/connection">🔌 بررسی اتصال</button>
+            <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium" routerLink="/users">👥
+                مدیریت کاربران</button>
+        </div>
+
     </div>
-
-    <!-- سمت راست -->
-
-    <div class="grid gap-4">
-        <button mat-raised-button color="primary" routerLink="/notification">🔔 اعلان‌ها</button>
-        <button mat-raised-button color="accent" routerLink="/location">📍 موقعیت مکانی</button>
-        <button mat-raised-button color="primary" routerLink="/camera">📷 دوربین</button>
-        <button mat-raised-button color="primary" routerLink="/connection">🔌 وضعیت اتصال</button>
-        <button mat-raised-button color="primary" routerLink="/users">👥 لیست کاربران</button>
-    </div>
-
 </div>
