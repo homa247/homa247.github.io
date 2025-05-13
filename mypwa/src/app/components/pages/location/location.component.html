@@ -1,18 +1,30 @@
-<div class="p-4 bg-white rounded-xl shadow-md text-center">
-    <h2 class="text-xl font-semibold mb-2">موقعیت فعلی شما</h2>
-    <button mat-raised-button color="primary" class="mt-4" (click)="getLocation()">
-        موقعیت
-    </button>
-    @if(latitude && longitude){
-    <div>
-        <p>🌍 عرض جغرافیایی: <strong>{{ latitude }}</strong></p>
-        <p>🌍 طول جغرافیایی: <strong>{{ longitude }}</strong></p>
-    </div>
-    }
+<div class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div class="w-full max-w-sm bg-white rounded-2xl shadow-xl p-6 text-center">
 
-    @if(errorMessage){
-    <div class="text-red-500 mt-2">
-        {{ errorMessage }}
+        <!-- عنوان -->
+        <h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center justify-center">
+            📍 موقعیت فعلی شما
+        </h2>
+
+        <!-- دکمه دریافت لوکیشن -->
+        <button mat-raised-button color="primary" class="w-full py-3 rounded-xl text-white text-base font-semibold mb-4"
+            (click)="getLocation()">
+            📡 دریافت موقعیت مکانی
+        </button>
+
+        <!-- نمایش لوکیشن -->
+        @if (latitude && longitude) {
+        <div class="bg-gray-50 text-sm text-gray-700 rounded-lg p-4 border border-gray-200 mb-2">
+            <p>🌍 عرض جغرافیایی: <strong>{{ latitude }}</strong></p>
+            <p>🌍 طول جغرافیایی: <strong>{{ longitude }}</strong></p>
+        </div>
+        }
+
+        <!-- ارور در صورت وجود -->
+        @if (errorMessage) {
+        <div class="bg-red-100 text-red-600 text-sm rounded-lg px-4 py-2 mt-2 border border-red-300">
+            ⚠ {{ errorMessage }}
+        </div>
+        }
     </div>
-    }
 </div>

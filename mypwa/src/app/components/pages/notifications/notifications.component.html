@@ -1,17 +1,33 @@
-<div class="p-4">
-    <h2 class="text-xl font-bold mb-4">🔔 اعلان‌ها</h2>
+<div class="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div class="w-full max-w-sm bg-white rounded-2xl shadow-xl p-6">
 
-    <p>وضعیت مجوز اعلان:
-        <span [ngClass]="{
-        'text-green-600': permissionStatus === 'granted',
-        'text-yellow-600': permissionStatus === 'default',
-        'text-red-600': permissionStatus === 'denied'
-      }">
-            {{ permissionStatus }}
-        </span>
-    </p>
-    <h2>{{error2}}</h2>
-    <button mat-raised-button color="primary" class="mt-4" (click)="requestPermission()">
-        درخواست مجوز و ارسال اعلان تستی
-    </button>
+        <!-- عنوان -->
+        <div class="flex items-center justify-between mb-4">
+            <h2 class="text-xl font-bold text-gray-800 flex items-center">
+                <span class="text-2xl mr-2">🔔</span> اعلان‌ها
+            </h2>
+            <span class="text-xs font-medium px-3 py-1 rounded-full" [ngClass]="{
+          'bg-green-100 text-green-800': permissionStatus === 'granted',
+          'bg-yellow-100 text-yellow-800': permissionStatus === 'default',
+          'bg-red-100 text-red-800': permissionStatus === 'denied'
+        }">
+                {{ permissionStatus }}
+            </span>
+        </div>
+
+        <p class="text-sm text-gray-600 leading-relaxed mb-4">
+            برای دریافت نوتیفیکیشن از برنامه، لطفاً ابتدا اجازه دسترسی بدهید.
+        </p>
+
+        @if(error2){
+        <div class="bg-red-100 text-red-700 text-sm rounded-lg px-4 py-2 mb-4">
+            ⚠ {{ error2 }}
+        </div>
+        }
+
+        <button mat-raised-button color="primary" class="w-full py-3 rounded-xl text-white text-base font-semibold"
+            (click)="requestPermission()">
+            📩 درخواست دسترسی و ارسال اعلان
+        </button>
+    </div>
 </div>
