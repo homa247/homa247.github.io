@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class NotificationsComponent {
   permissionStatus: NotificationPermission = Notification.permission;
+  error2: any;
 
   requestPermission() {
     if (!('Notification' in window)) {
@@ -28,9 +29,15 @@ export class NotificationsComponent {
   }
 
   sendTestNotification() {
-    new Notification('اعلان تستی!', {
-      body: 'این یک اعلان آزمایشی از PWA است.',
-      icon: 'assets/icons/icon-192x192.png'
-    });
+    try {
+      new Notification('اعلان تستی!', {
+        body: 'این یک اعلان آزمایشی از PWA است.',
+        icon: 'assets/icons/icon-192x192.png'
+      });
+
+    } catch (error) {
+      this.error2 = error;
+      console.error("اجازه نمایش نوتیفیکیشن داده نشد!");
+    }
   }
 }
