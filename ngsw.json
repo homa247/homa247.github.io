@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1747050123221,
+  "timestamp": 1747114371221,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-7X6QDFUR.js",
+        "/main-I655RW4J.js",
         "/manifest.webmanifest",
         "/polyfills-FFHMD2TL.js",
         "/styles-E46SPXWT.css"
@@ -57,8 +57,8 @@
     "/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/index.html": "ca08ee908fabe297bf8749e1f157fc54d219fff9",
-    "/main-7X6QDFUR.js": "c4ff9a8f17fe83a5edb984e456ac8f83520c7ec3",
+    "/index.html": "baf4b26e015ee12ecfd7e233158e7c8873574077",
+    "/main-I655RW4J.js": "4b585e4838d56bf3ab96f530be8c171fd1652e6b",
     "/manifest.webmanifest": "b7d108b296d40f0592d6be294535064128bfd5f9",
     "/media/Vazir-Bold-FD-WOL-66ECH4TV.woff": "8460cbed2dbad441f535844cc9b59c2fdd120837",
     "/media/Vazir-Bold-FD-WOL-7NQTYYLK.ttf": "b2deb38c541ed24827690772055dee336e256723",
