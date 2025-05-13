@@ -19,6 +19,7 @@ bootstrapApplication(AppComponent, {
   providers: [provideRouter(routes),
   importProvidersFrom(MatPaginatorModule, BrowserModule, ScrollingModule,
     FormsModule, ReactiveFormsModule, RouterModule, DragDropModule,
+
     // JwtModule.forRoot({
     //     jwtOptionsProvider: {
     //         provide: JWT_OPTIONS,
@@ -52,4 +53,8 @@ bootstrapApplication(AppComponent, {
 
 })
 
-  .catch(err => console.error(err));
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('ngsw-worker.js')
+    .then(() => console.log('Service Worker registered'))
+    .catch(err => console.error('Service Worker registration failed:', err));
+}
