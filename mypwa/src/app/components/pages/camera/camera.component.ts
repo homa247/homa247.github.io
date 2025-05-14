@@ -108,6 +108,7 @@ export class CameraComponent {
     context.drawImage(video, 0, 0, canvas.width, canvas.height);
     const dataUrl = canvas.toDataURL('image/png');
     this.imagePreviewUrl = dataUrl;
+    console.log(this.imagePreviewUrl);
 
     // const file = this.dataURLToFile(dataUrl, 'captured-photo.png');
 
