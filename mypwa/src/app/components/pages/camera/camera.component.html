@@ -1,1 +1,22 @@
-<p>camera works!</p>
+<div class="flex flex-col items-center justify-center p-4">
+    <!-- عنوان -->
+    <h2 class="text-xl font-bold text-gray-700 mb-4">پیش‌ نمایش دوربین</h2>
+
+    <!-- ویدیو -->
+    <div class="w-full max-w-md aspect-video rounded-xl overflow-hidden border-4 border-gray-300 shadow-inner mb-4">
+        <video #video autoplay muted playsinline class="w-full h-full object-cover"></video>
+    </div>
+
+    <!-- دکمه‌ها -->
+    <div class="flex flex-row justify-center items-center gap-4">
+        <button type="button" mat-mini-fab color="primary" class="shadow-md" (click)="switchCamera()"
+            matTooltip="تغییر دوربین">
+            <mat-icon>cached</mat-icon>
+        </button>
+
+        <button mat-raised-button color="accent" class="rounded-xl px-6 py-2 shadow-lg text-white"
+            (click)="capturePhoto()">
+            گرفتن عکس
+        </button>
+    </div>
+</div>
