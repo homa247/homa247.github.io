@@ -1,1 +1,20 @@
-<p>users works!</p>
+<div class="p-6 max-w-lg mx-auto bg-white rounded-xl shadow-lg space-y-4">
+    <h2 class="text-xl font-bold text-blue-700">👥 مدیریت کاربران</h2>
+    <p class="text-gray-600">اضافه، نمایش و حذف کاربران به صورت ذخیره‌سازی محلی (Local Storage)</p>
+
+    <mat-form-field appearance="outline" class="w-full">
+        <mat-label>نام کاربر جدید</mat-label>
+        <input matInput [(ngModel)]="newUser">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="w-full" (click)="addUser()">➕ افزودن کاربر</button>
+
+    <ul class="mt-4 list-disc pr-4 space-y-2">
+        @for(user of users; track user; let i = $index){
+        <li class="flex justify-between items-center">
+            <span>{{ user }}</span>
+            <button mat-icon-button color="warn" (click)="removeUser(i)">❌</button>
+        </li>
+        }
+    </ul>
+</div>

@@ -1,1 +1,13 @@
-<p>connection-status works!</p>
+<div class="p-6 max-w-lg mx-auto bg-white rounded-xl shadow-lg space-y-4 text-center">
+    <h2 class="text-xl font-bold text-blue-700">🔌 بررسی اتصال اینترنت</h2>
+    <p class="text-gray-600">با زدن دکمه زیر، وضعیت اتصال شما بررسی می‌شود.</p>
+
+    <button mat-raised-button color="primary" (click)="checkConnection()">
+        بررسی وضعیت اتصال
+    </button>
+    @if (connectionStatus) {
+    <p class="mt-4 text-lg font-medium" [class.text-green-600]="isOnline" [class.text-red-600]="!isOnline">
+        {{ connectionStatus }}
+    </p>
+    }
+</div>
