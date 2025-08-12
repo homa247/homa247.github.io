@@ -13,6 +13,7 @@ import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
 import { MatPaginatorIntl, MatPaginatorModule } from '@angular/material/paginator';
 import { MAT_SNACK_BAR_DEFAULT_OPTIONS } from '@angular/material/snack-bar';
 import { MAT_MENU_DEFAULT_OPTIONS } from '@angular/material/menu';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 
 bootstrapApplication(AppComponent, {
@@ -28,6 +29,7 @@ bootstrapApplication(AppComponent, {
     //     }
     // })),
   ),
+  provideAnimations(),
   // ThemingService,
 
   // { provide: HTTP_INTERCEPTORS, useClass: HttpErrorHandelerInterceptor, multi: true },

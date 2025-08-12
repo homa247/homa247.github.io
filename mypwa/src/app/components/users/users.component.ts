@@ -4,7 +4,9 @@ import { FormsModule, NgModel } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule, MatSuffix } from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
-
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 @Component({
   selector: 'app-users',
   standalone: true,
