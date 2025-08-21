@@ -3,7 +3,7 @@
 
         <!-- بخش معرفی -->
         <div class="space-y-6 text-center md:text-right">
-            <h1 class="text-2xl font-bold text-blue-800">👋 خوش آمدید</h1>
+            <h1 class="text-2xl font-bold text-blue-800"> خوش آمدید</h1>
             <p class="text-gray-600 text-base leading-relaxed">
                 این اپلیکیشن آزمایشی با هدف بررسی و مقایسه‌ی قابلیت‌های
                 <span class="text-blue-700 font-medium">Progressive Web App (PWA)</span>
@@ -20,14 +20,21 @@
         <!-- دکمه‌های دسترسی به صفحات -->
         <div class="grid gap-4">
             <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium"
-                routerLink="/notification">🔔 ارسال اعلان</button>
-            <button mat-raised-button color="accent" class="w-full py-3 text-base font-medium" routerLink="/location">📍
+                routerLink="/notification">
+                <mat-icon>notifications_rounded</mat-icon>
+                ارسال اعلان</button>
+            <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium" routerLink="/location">
+                <mat-icon>location_on</mat-icon>
                 موقعیت مکانی</button>
-            <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium" routerLink="/camera">📷
+            <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium" routerLink="/camera">
+                <mat-icon>camera_alt_rounded</mat-icon>
                 استفاده از دوربین</button>
             <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium"
-                routerLink="/connection">🔌 بررسی اتصال</button>
-            <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium" routerLink="/users">👥
+                routerLink="/connection">
+                <mat-icon>wifi_rounded</mat-icon>
+                بررسی اتصال</button>
+            <button mat-raised-button color="primary" class="w-full py-3 text-base font-medium" routerLink="/users">
+                <mat-icon>group_outlined</mat-icon>
                 مدیریت کاربران</button>
         </div>
 

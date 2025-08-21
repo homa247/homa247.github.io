@@ -1,0 +1,91 @@
+{
+  "configVersion": 1,
+  "timestamp": 1755585106675,
+  "index": "https://homa247.github.io/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://homa247.github.io/favicon.ico",
+        "https://homa247.github.io/index.html",
+        "https://homa247.github.io/main-MMIVQMQE.js",
+        "https://homa247.github.io/manifest.webmanifest",
+        "https://homa247.github.io/polyfills-FFHMD2TL.js",
+        "https://homa247.github.io/styles-DTJIDZET.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "https://homa247.github.io/icons/icon-128x128.png",
+        "https://homa247.github.io/icons/icon-144x144.png",
+        "https://homa247.github.io/icons/icon-152x152.png",
+        "https://homa247.github.io/icons/icon-192x192.png",
+        "https://homa247.github.io/icons/icon-384x384.png",
+        "https://homa247.github.io/icons/icon-512x512.png",
+        "https://homa247.github.io/icons/icon-72x72.png",
+        "https://homa247.github.io/icons/icon-96x96.png",
+        "https://homa247.github.io/media/Vazir-Bold-FD-WOL-66ECH4TV.woff",
+        "https://homa247.github.io/media/Vazir-Bold-FD-WOL-7NQTYYLK.ttf",
+        "https://homa247.github.io/media/Vazir-Bold-FD-WOL-BHN5OM6C.woff2",
+        "https://homa247.github.io/media/Vazir-Medium-FD-WOL-NM3PQDK6.ttf",
+        "https://homa247.github.io/media/Vazir-Medium-FD-WOL-OIUNKDQ6.woff",
+        "https://homa247.github.io/media/Vazir-Medium-FD-WOL-QMEMMXVM.woff2"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "https://homa247.github.io/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "https://homa247.github.io/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "https://homa247.github.io/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "https://homa247.github.io/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "https://homa247.github.io/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "https://homa247.github.io/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "https://homa247.github.io/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "https://homa247.github.io/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "https://homa247.github.io/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "https://homa247.github.io/index.html": "3ec44997bffc21cb64e71019f02d4d01caa1a900",
+    "https://homa247.github.io/main-MMIVQMQE.js": "35439e7b3a1bb5eaef345dcbd7a5603be4654f4d",
+    "https://homa247.github.io/manifest.webmanifest": "b7d108b296d40f0592d6be294535064128bfd5f9",
+    "https://homa247.github.io/media/Vazir-Bold-FD-WOL-66ECH4TV.woff": "8460cbed2dbad441f535844cc9b59c2fdd120837",
+    "https://homa247.github.io/media/Vazir-Bold-FD-WOL-7NQTYYLK.ttf": "b2deb38c541ed24827690772055dee336e256723",
+    "https://homa247.github.io/media/Vazir-Bold-FD-WOL-BHN5OM6C.woff2": "03662753f935b1fdbfa034a051c18f8f589bc3c6",
+    "https://homa247.github.io/media/Vazir-Medium-FD-WOL-NM3PQDK6.ttf": "59ae69b914a8ba525ec3f0e7df70d29bd9de4658",
+    "https://homa247.github.io/media/Vazir-Medium-FD-WOL-OIUNKDQ6.woff": "edee970cedecfbb6758544ae3a29412f149d8459",
+    "https://homa247.github.io/media/Vazir-Medium-FD-WOL-QMEMMXVM.woff2": "adfd715f28f659edf4112372840a032b8a7851ff",
+    "https://homa247.github.io/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
+    "https://homa247.github.io/styles-DTJIDZET.css": "e981e2d6a73dd2ea10656b5a6b481639e9624ca1"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
